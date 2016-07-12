@@ -4,9 +4,9 @@ let spinner = new Spinner({
   text: 'Loading',
   color: 'green'
 })
-spinner.on('done', () => {
-  return '\n  One Down!'
-})
+// spinner.on('done', () => {
+//   return '\n  One Down!'
+// })
 spinner.begin()
 setTimeout(() => {
   spinner.changeText('Things')

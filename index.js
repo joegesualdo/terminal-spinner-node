@@ -71,7 +71,9 @@ class TerminalSpinner {
       const finishedText = this.onDone();
       process.stdout.clearLine();
       process.stdout.cursorTo(0);
-      process.stdout.write(`${finishedText}\n`);
+      if (finishedText) {
+        process.stdout.write(`${finishedText}\n`);
+      }
       showCursor();
       resolve();
     });
@@ -83,4 +85,3 @@ class TerminalSpinner {
 }
 
 export default TerminalSpinner;
-
