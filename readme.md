@@ -48,8 +48,22 @@ let spinner = new TerminalSpinner({
 ### `terminalSpinner.begin()`
 > Starts the spinner
 
+```javascript
+import TerminalSpinner from '@joegesualdo/terminal-spinner-node';
+
+let spinner = new TerminalSpinner()
+spinner.begin()
+```
+
 ### `terminalSpinner.stop()`
 > Stops the spinner
+```javascript
+import TerminalSpinner from '@joegesualdo/terminal-spinner-node';
+
+let spinner = new TerminalSpinner()
+spinner.begin()
+spinner.stop()
+```
 
 ### `terminalSpinner.on(event, fn)`
 > Intercepts the spinner a life-cycles
@@ -58,6 +72,18 @@ let spinner = new TerminalSpinner({
 |------|------|-------------|
 | event | `String` | The lifecycle event. Supports: `done` |
 | fn | `Function` | Function you want to run at the life-cycle |
+
+```javascript
+import TerminalSpinner from '@joegesualdo/terminal-spinner-node';
+
+let spinner = new TerminalSpinner()
+
+spinner.on('done', () => {
+  return '\n  One Down!'
+})
+
+spinner.begin()
+```
 ## Build
 ```
 $ npm run build
