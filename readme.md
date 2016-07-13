@@ -91,4 +91,4 @@ $ npm run build
 ```
 
 ## License
-MIT © [undefined]()
+MIT © [Joe Gesualdo]()
