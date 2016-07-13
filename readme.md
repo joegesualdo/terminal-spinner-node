@@ -22,10 +22,6 @@ spinner.on('done', () => {
 spinner.begin()
 ```
 
-## Test
-```
-$ npm test
-```
 ## API
 ### `TerminalSpinner([options])`
 > Creates an instance
@@ -84,13 +80,14 @@ spinner.on('done', () => {
 
 spinner.begin()
 ```
+## Test
+```
+$ npm test
+```
 ## Build
 ```
 $ npm run build
 ```
-
-## Related
-- [example-package]() - Add description of the example package here.
 
 ## License
 MIT © [undefined]()

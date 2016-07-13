@@ -143,7 +143,9 @@ module.exports =
 	        var finishedText = _this2.onDone();
 	        process.stdout.clearLine();
 	        process.stdout.cursorTo(0);
-	        process.stdout.write(finishedText + '\n');
+	        if (finishedText) {
+	          process.stdout.write(finishedText + '\n');
+	        }
 	        (0, _showTerminalCursor2.default)();
 	        resolve();
 	      });
