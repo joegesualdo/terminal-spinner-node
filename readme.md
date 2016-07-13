@@ -53,6 +53,7 @@ spinner.begin()
 
 ### `terminalSpinner.stop()`
 > Stops the spinner
+
 ```javascript
 import TerminalSpinner from '@joegesualdo/terminal-spinner-node';
 
